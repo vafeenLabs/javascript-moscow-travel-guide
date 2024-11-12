@@ -1,0 +1,678 @@
+#alternative-route-container button {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding: 4px 5px;
+}
+
+.input2 {
+    position: relative;
+    top: -8.2%;
+    left: -10%;
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    border: solid 2px white;
+    z-index: 9999;
+
+    *:not(span) {
+        position: relative;
+        display: inherit;
+        border-radius: inherit;
+        margin: 0;
+        border: none;
+        outline: none;
+        padding: 0 .325em;
+        z-index: 2;
+
+        &:focus+span {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    span {
+
+        transform: scale(.993, .94);
+        transition: transform .5s, opacity .25s;
+        opacity: 0;
+
+        position: absolute;
+        z-index: 0;
+        margin: 4px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        pointer-events: none;
+
+        box-shadow: inset 0 0 0 3px #fff,
+            0 0 0 4px #fff,
+            3px -3px 30px #1beabd,
+            -3px 3px 30px #10abff;
+    }
+
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+::placeholder {
+    color: #9ea1a4;
+}
+
+.input {
+    position: relative;
+    box-sizing: border-box;
+    font-size: 1.3em;
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+    z-index: 9999;
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transition: all 0.3s ease-in;
+    }
+
+    *:not(span) {
+        position: relative;
+        display: inherit;
+        border-radius: inherit;
+        margin: 0;
+        border: none;
+        outline: none;
+        padding: 0 .325em;
+        z-index: 1;
+
+        &:focus+span {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    span {
+
+        transform: scale(.993, .94);
+        transition: transform .5s, opacity .25s;
+        opacity: 0;
+
+        position: absolute;
+        z-index: 0;
+        margin: 4px;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        pointer-events: none;
+
+        box-shadow: inset 0 0 0 3px #fff,
+            0 0 0 4px #fff,
+            3px -3px 30px #1beabd,
+            -3px 3px 30px #10abff;
+    }
+
+}
+
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+input {
+    font-family: inherit;
+    line-height: inherit;
+    color: #2e3750;
+    min-width: 12em;
+}
+
+::placeholder {
+    color: #cbd0d5;
+}
+
+html::after {
+    content: '';
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+}
+
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+
+}
+
+
+.context h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area {
+    background: linear-gradient(gray 10%, black 90%);
+    box-sizing: border-box;
+    padding: 20px 20px 0 20 px;
+    width: 100%;
+    height: 100vh;
+}
+
+.area_title {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.senviron-iding-micad {
+    width: 315px;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    top: 44%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    z-index: 9999;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.senviron-iding-micad:active,
+.senviron-iding-micad:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.senviron-iding-micad2 {
+    width: 315px;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    z-index: 9999;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.senviron-iding-micad2:active,
+.senviron-iding-micad2:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.senviron-iding-micad3 {
+    width: 315px;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    z-index: 9999;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.senviron-iding-micad3:active,
+.senviron-iding-micad3:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.senviron-iding-micad4 {
+    width: 315px;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    top: 62%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    z-index: 9999;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.senviron-iding-micad4:active,
+.senviron-iding-micad4:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.senviron-iding-micad5 {
+    width: 315px;
+    height: 48px;
+    border: none;
+    outline: none;
+    color: white;
+    background: black;
+    cursor: pointer;
+    position: absolute;
+    top: 62%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in, background-color 0.3s ease-in, border-color 0.3s ease-in;
+    z-index: 9995;
+    border: solid 3px white;
+    border-radius: 5px;
+}
+
+.senviron-iding-micad5:active,
+.senviron-iding-micad5:hover {
+    color: black;
+    background-color: white;
+    border-color: black;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Оформление панели */
+#side-checkbox {
+    display: none;
+}
+
+.side-panel {
+    display: none;
+    position: absolute;
+    z-index: 999999;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #ffffff;
+    transition: all 0.5s;
+    width: 320px;
+    height: 320px;
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    border: solid 2px black;
+    transition: all 0.3s auto;
+}
+
+.side-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #BFE2FF;
+}
+
+/* Оформление кнопки на странице */
+.side-button-1-wr {
+    text-align: right;
+    /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+}
+
+.side-button-1 {
+    display: inline-block;
+}
+
+.side-button-1 .side-b {
+    margin: 10px;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    left: -500px;
+    line-height: 20px;
+    padding: 12px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', Тahoma, sans-serif;
+    transition: all 0.3 ease-in;
+    background-color: black;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.side-button-1 .side-b:hover,
+.side-b:active,
+.side-b:focus {
+    transition: all 0.3 ease-in;
+    color: green;
+    background-color: white;
+}
+
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+    transition: all 0.3 ease-in;
+    background: green;
+}
+
+.side-button-1 .side-close:after,
+.side-close:hover,
+.side-button-1 .side-close:before,
+.side-close {
+    transition: all 0.3 ease-in;
+    background-color: red;
+}
+
+.side-button-1 .side-b:before {
+    top: -6px;
+}
+
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+    transition: all 0.3 ease-in;
+    display: none;
+}
+
+.side-button-1 .side-close:hover {
+    color: red;
+    transition: all 0.3 ease-in;
+}
+
+#side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+
+#side-checkbox:checked+.side-panel+.side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+
+#side-checkbox:checked+.side-panel {
+    display: block;
+    transition: all 0.3s ease-in;
+}
+
+/* Оформление кнопки на панеле */
+.side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color: black;
+    transition: all 280ms ease-in-out;
+}
+
+.side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);
+    color: gray;
+}
+
+#map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1870px;
+    height: 700px;
+    z-index: 0;
+}
+
+#output {
+    position: fixed;
+    max-width: 1000px;
+    max-height: 80px;
+    overflow-y: scroll;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    top: 95%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+}
+
+#time-input {
+    margin-bottom: 10px;
+    z-index: 9994;
+}
+
+#dijkstra-route-btn {
+    margin-top: 10px;
+    z-index: 9993;
+}

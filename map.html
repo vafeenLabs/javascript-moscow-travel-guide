@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>MTG by V&A</title>
+    <link rel="stylesheet" href="./styles/map.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=80b386a7-86d8-4bb7-a130-3cc2179c34a4&lang=ru_RU"
+    type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="area">
+        <h1 class="area_title">Moscow Travel Guide by Vafin&Aleinikov</h1>
+        <input type="checkbox" id="side-checkbox" />
+        <div class="side-panel">
+            <label class="side-button-2" for="side-checkbox">+</label>
+            <div class="side-title">Выдвижная панель:</div>
+            <p>Среднее время экскурсии: 25 минут </p>
+            <p>ЛКМ - Поставить метку</p>
+            <p>ПКМ - Удалить метку</p>
+        </div>
+        <div class="side-button-1-wr">
+            <label class="side-button-1" for="side-checkbox">
+                <div class="side-b side-open">Настройки | INFO</div>
+                <div class="side-b side-close">Закрыть</div>
+            </label>
+        </div>
+        <div id="time-input">
+        </div>
+        <div id="output"></div>
+        <div id="distance-output"></div>
+        <div class="input2" id="speed-input">
+            <div id="alternative-route-distance"></div>
+            <label for="human-speed">Введите скорость (км/ч):</label>
+            <input type="number" id="human-speed-input" placeholder="Введите скорость">
+        </div>
+        <button class="senviron-iding-micad" id="calculate-route-btn">Рассчитать маршрут</button>
+        <button class="senviron-iding-micad2" id="show-alternative-route-btn">Показать альтернативный маршрут</button>
+        <button class="senviron-iding-micad3" id="dijkstra-route-btn">Показать маршрут Дейкстра</button>
+        <button class="senviron-iding-micad4" id="optimize-route-plus-btn">Оптимизировать Время и Маршрут+</button>
+        <button class="senviron-iding-micad5" id="optimize-route-minus-btn">Оптимизировать Время и Маршрут-</button>
+        <div id="map"></div>
+
+
+    </div>
+    <script type="text/javascript" src="./js/map.js">
+        
+    </script>
+
+</body>
+
+</html>
